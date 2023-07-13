@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock - FreeSoulCriss</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
+    </script>
   </head>
   <body>
     <div class="container">
@@ -16,16 +21,16 @@
         <option value="">Auckland</option>
       </select>
       <div class="cities">
-        <div class="city">
+        <div class="city" id="los-angeles">
           <div class="city-name-date">
             <h2>Los Angeles</h2>
-            <div class="date">July 9th 2023</div>
+            <div class="date"></div>
           </div>
           <div class="city-time">
-            <div class="time">0:15:09 <small>PM</small></div>
+            <div class="time"></div>
           </div>
         </div>
-        <div class="city">
+        <div class="city" id="barcelona">
           <div class="city-name-date">
             <h2>Barcelona</h2>
             <div class="date">July 10th 2023</div>
@@ -48,6 +53,6 @@
         >open sourced on Github</a
       >
     </footer>
-    <script src="index.js"></script>
+    <script src="/javascript/index.js"></script>
   </body>
 </html>
