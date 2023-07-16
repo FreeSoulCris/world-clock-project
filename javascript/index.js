@@ -53,19 +53,19 @@ function updateCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
+
   citiesElement.innerHTML = `<div class="city">
   <div>
   <h2>${cityName}</h2>
   <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
   </div>
-  <div class="time">${cityTime.format("h:mm:ss")}   <small>${cityTime.format(
+  <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
   </div>
- <a href="index.html">All cities</a> 
+ <a href="index.html" style="text-decoration:none; color:black; text-shadow: 4px 3px 0px rgba(205, 172, 129, 0.3); font-size:26px">All cities <small style= "font-size:16px">⟲ </small></a> 
   `;
 }
-
 updateTime();
 setInterval(updateTime, 1000);
 
